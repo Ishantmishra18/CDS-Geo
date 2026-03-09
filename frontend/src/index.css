@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;   
+
+
+path{
+    fill: #9ed89f;
+    stroke: white;
+}
+
+/* STATE MODE */
+
+.map-state path {
+  fill: #9ed89f;
+  stroke: white;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.map-state path:hover {
+  fill: #2e7d32;
+}
+
+/* MARKER MODE */
+
+.map-disabled path {
+  fill: #9ed89f;
+  pointer-events: none;
+}
+
+/* MARKERS */
+
+.marker {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  background: red;
+  border-radius: 50%;
+  cursor: pointer;
+  transform: translate(-50%, -50%);
+}
