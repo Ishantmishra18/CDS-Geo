@@ -1,18 +1,49 @@
-import React from 'react'
+import React, { useState } from "react";
 
-const aboutCard = ({ title, description , img , stamp=[]   }) => {
+const AboutCard = ({ question, keyword, description, img, stamp = [] }) => {
+
+  const [strictMode, setStrictMode] = useState(false);
+
   return (
-    <div className="bout w-[40vw] p-5 rounded-lg bg-gray-100">
-        <img src={img} alt="" className='w-full aspect-video rounded-lg object-cover'/>
-        <h3 className="text-xl font-bold mt-2">{title}</h3>
-        <p className="text-gray-600">{description}</p>
-        <div className="mark flex mt-5">
-            {stamp.map((s) => (
-                <img src={`/stamp/unesco.png`} alt="" className='h-12 '/>
-            ))}
-        </div>
-    </div>
-  )
-}
+    <div className="bout relative md:w-[40vw] w-full md:p-5 p-5 pb-12 rounded-lg bg-gray-100">
 
-export default aboutCard
+      {/* Image (hidden in strict mode) */}
+      {!strictMode && (
+        <img
+          src={img}
+          alt=""
+          className="w-full aspect-video rounded-lg mb-5 object-cover"
+        />
+      )}
+
+      <h5 className="text-sm font-semibold text-gray-600">{question}</h5>
+
+      <h3 className="text-3xl mt-2">{keyword}</h3>
+
+      <p className="text-gray-600">{description}</p>
+
+      {/* Stamps */}
+      <div className="mark flex mt-5 gap-2">
+        {stamp.map((s, i) => (
+          <img key={i} src={`/stamp/${s}.png`} alt="" className="h-12" />
+        ))}
+      </div>
+
+      {/* Toggle */}
+      <div className="absolute md:right-6 md:bottom-6 right-3 bottom-3">
+
+        <button
+          onClick={() => setStrictMode(!strictMode)}
+          className={`px-3 py-1 rounded-full text-sm transition 
+          ${strictMode ? "bg-gray-500 text-white" : "bg-gray-300"}`}
+        >
+          {strictMode ? "Strict Mode ON" : "Strict Mode OFF"}
+        </button>
+
+      </div>
+
+    </div>
+  );
+};
+
+export default AboutCard;

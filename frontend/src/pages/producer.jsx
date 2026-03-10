@@ -90,11 +90,13 @@ const Parks = () => {
   };
 
   return (
-    <div className="flex p-4 gap-6">
+    <div className="flex flex-col md:flex-row  p-4 gap-6">
 
       <AboutCard
         img={`/producer/${question?.keyword}.webp`}
-        title={`which state is the largest producer of ${question?.keyword}?`}
+        question = "Which state is the largest producer of this?"
+        keyword={question?.keyword}
+      
       />
 
       <div className="relative">

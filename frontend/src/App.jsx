@@ -3,6 +3,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Home from './pages/home'
 import States from './pages/States'
 import NuclearPower from './pages/nuclearPower'
+import Natural from './pages/natural'
 import Navbar from './components/navbar'
 import Parks from './pages/parks'
 import Producer from './pages/producer'
@@ -34,6 +35,11 @@ function App() {
       path:'/producer',
       element:<>
       <Producer></Producer>
+      </>
+    },{
+      path:'/natural',
+      element:<>
+      <Natural></Natural>
       </>
     }
   ])

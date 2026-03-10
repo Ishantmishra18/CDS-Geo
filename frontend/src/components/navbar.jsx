@@ -2,13 +2,11 @@ import React, { useRef } from "react";
 import { Link } from "react-router-dom";
 
 const items = [
-  { name: "States Quiz", icon: "🧠", path: "/states" },
-  { name: "Mountain Ranges", icon: "🏔", path: "/mountains" },
+  { name: "Home", icon: "🧠", path: "/" },
+  { name: "Natural visit", icon: "🏔", path: "/natural" },
   { name: "National Parks", icon: "🌲", path: "/parks" },
   { name: "Nuclear Plants", icon: "☢", path: "/nuclear" },
-  { name: "Plateaus", icon: "⛰", path: "/plateaus" },
-  { name: "Rivers", icon: "🌊", path: "/rivers" },
-  { name: "Producer", icon: "🐅", path: "/producer" }
+  { name: "Producer", icon: "🌾", path: "/producer" }
 ];
 
 const Navbar = () => {
@@ -43,7 +41,7 @@ const Navbar = () => {
       ref={containerRef}
       onMouseMove={handleMouseMove}
       onMouseLeave={resetScale}
-      className="fixed right-0 top-0 h-screen w-[90px] bg-gray-200 flex flex-col items-center py-6 gap-6"
+      className="fixed md:right-2 rounded-xl md:top-1/2 md:-translate-y-1/2 md:h-[96vh] md:w-[90px] bottom-0 w-full p-2 right-0  bg-gray-200 flex md:flex-col items-center justify-between py-6 "
     >
       {items.map((item) => (
         <Link
@@ -52,7 +50,7 @@ const Navbar = () => {
           className="nav-item text-2xl flex flex-col items-center transition-all duration-200"
         >
           <span>{item.icon}</span>
-          <span className="text-[10px] mt-1">
+          <span className="text-[10px] hidden mt-1">
             {item.name}
           </span>
         </Link>

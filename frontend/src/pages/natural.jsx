@@ -1,55 +1,66 @@
 import { useState, useEffect } from "react";
-import IndiaMap from "../components/indiaMap";
-import { nuclearPlants } from "../data/nuclear";
+import { naturalFeatures } from "../data/natural";
 import Navbar from "../components/navbar";
-import { GiNuclearPlant } from "react-icons/gi";
-import { IoIosNuclear } from "react-icons/io";
 import AboutCard from "../components/aboutCard";
+import IndiaMap from "../components/indiaMap";
 import React from "react";
 
-function App() {
+const Natural = () => {
 
-  const [plants, setPlants] = useState([]);
+  const [parks, setParks] = useState([]);
   const [index, setIndex] = useState(0);
   const [question, setQuestion] = useState(null);
 
+  const [selectedState, setSelectedState] = useState(null);
   const [resultIcon, setResultIcon] = useState(null);
+
   const [attempts, setAttempts] = useState(0);
   const [showAnswer, setShowAnswer] = useState(false);
 
-  // shuffle plants once
+  // shuffle parks once
   useEffect(() => {
-    const shuffled = [...nuclearPlants].sort(() => Math.random() - 0.5);
-    setPlants(shuffled);
+
+    const shuffled = [...naturalFeatures].sort(() => Math.random() - 0.5);
+    setParks(shuffled);
     setQuestion(shuffled[0]);
+
   }, []);
 
   const nextQuestion = () => {
 
     const nextIndex = index + 1;
 
-    if (nextIndex < plants.length) {
+    if (nextIndex < parks.length) {
+
       setIndex(nextIndex);
-      setQuestion(plants[nextIndex]);
+      setQuestion(parks[nextIndex]);
+
     } else {
 
-      const reshuffled = [...nuclearPlants].sort(() => Math.random() - 0.5);
-      setPlants(reshuffled);
+      const reshuffled = [...naturalFeatures].sort(() => Math.random() - 0.5);
+      setParks(reshuffled);
       setIndex(0);
       setQuestion(reshuffled[0]);
 
     }
 
+    // reset states
     setAttempts(0);
     setShowAnswer(false);
+    setSelectedState(null);
+
   };
 
-  const checkResponse = (markerClicked) => {
+  const checkResponse = (clickedState) => {
 
     if (!question) return;
 
+    const correctState = question.state;
+
+    setSelectedState(clickedState);
+
     // CORRECT ANSWER
-    if (markerClicked.name === question.name) {
+    if (clickedState === correctState) {
 
       setResultIcon("correct");
 
@@ -71,6 +82,7 @@ function App() {
       setResultIcon(null);
     }, 1000);
 
+    // after 3 wrong attempts reveal answer
     if (newAttempts >= 3) {
       setShowAnswer(true);
     }
@@ -78,19 +90,21 @@ function App() {
   };
 
   return (
-    <div className="p-4 flex-col md:flex-row flex gap-6">
+    <div className="flex flex-col md:flex-row p-4 gap-6">
 
-      {/* Question panel */}
-      <AboutCard question="Locate the Nuclear Power Plant" keyword={question?.name} description={question?.description} img={question?.image} ></AboutCard>
+      <AboutCard
+        img={`/natural/${question?.keyword}.webp`}
+        question = "Which state is this located in?"
+        keyword={question?.keyword}
+        description={question?.description}
+      />
 
-      {/* Map */}
       <div className="relative">
 
         <IndiaMap
-          mode="marker"
-          markers={nuclearPlants}
-          onMarkerClick={checkResponse}
-          mark={<IoIosNuclear className="text-2xl text-gray-600" />}
+          mode="state"
+          onStateClick={checkResponse}
+          correctState={showAnswer ? question?.state : null}
         />
 
         {resultIcon === "correct" && (
@@ -107,18 +121,16 @@ function App() {
 
         {showAnswer && (
           <div className="absolute bottom-5 left-1/2 -translate-x-1/2 bg-white shadow-lg px-4 py-2 rounded-lg text-sm">
-            Correct Answer: <b>{question?.name}</b>
-            
+            Correct State: <b>{question?.state}</b>
           </div>
         )}
 
       </div>
 
       <Navbar />
-      
 
     </div>
   );
-}
+};
 
-export default App;
+export default Natural;

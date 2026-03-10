@@ -4,6 +4,7 @@ export default function IndiaMap({
   markers = [],
   onStateClick,
   onMarkerClick,
+  mark, 
   correctState
 }) {
 
@@ -20,10 +21,10 @@ export default function IndiaMap({
 };
 
   return (
-    <div className="relative w-[700px] mx-auto">
+    <div className="relative md:w-[700px] mb-[100px] md:mb-0 w-full mx-auto">
     <svg
       viewBox="0 0 1000 1000"
-      className={`w-[600px] mx-auto ${mode === "state" ? "map-state" : "map-disabled"}`}
+      className={`md:w-[600px] w-full mx-auto ${mode === "state" ? "map-state" : "map-disabled"}`}
       onClick={handleStateClick}
     >
       {/* PASTE ALL YOUR PATHS HERE */}
@@ -191,13 +192,15 @@ export default function IndiaMap({
         markers.map((marker, i) => (
           <div
             key={i}
-            className="marker"
+            className="marker grid place-content-center"
             style={{
               left: marker.x,
               top: marker.y
             }}
             onClick={() => onMarkerClick(marker)}
-          />
+          >
+            {mark}
+          </div>
         ))
       }
 

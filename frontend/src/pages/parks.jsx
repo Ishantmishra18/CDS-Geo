@@ -90,11 +90,12 @@ const Parks = () => {
   };
 
   return (
-    <div className="flex p-4 gap-6">
+    <div className="flex flex-col md:flex-row p-4 gap-6">
 
       <AboutCard
         img={question?.image}
-        title={question?.name}
+        question="Where is this National Park located?"
+        keyword={question?.name}
         description={question?.description}
         stamp={question?.stamp}
       />

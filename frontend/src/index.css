@@ -4,7 +4,6 @@
 
 
 path{
-    fill: #9ed89f;
     stroke: white;
 }
 
@@ -32,9 +31,10 @@ path{
 
 .marker {
   position: absolute;
-  width: 14px;
-  height: 14px;
-  background: red;
+  width: 18px;
+  height: 18px;
+  text-align: center;
+  background-color: yellow;
   border-radius: 50%;
   cursor: pointer;
   transform: translate(-50%, -50%);
