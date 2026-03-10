@@ -8,7 +8,7 @@ const items = [
   { name: "Nuclear Plants", icon: "☢", path: "/nuclear" },
   { name: "Plateaus", icon: "⛰", path: "/plateaus" },
   { name: "Rivers", icon: "🌊", path: "/rivers" },
-  { name: "Wildlife", icon: "🐅", path: "/wildlife" }
+  { name: "Producer", icon: "🐅", path: "/producer" }
 ];
 
 const Navbar = () => {
