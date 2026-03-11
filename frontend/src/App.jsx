@@ -7,6 +7,7 @@ import Natural from './pages/natural'
 import Navbar from './components/navbar'
 import Parks from './pages/parks'
 import Producer from './pages/producer'
+import Rocks from './pages/rocks'
 
 function App() {
 
@@ -40,6 +41,11 @@ function App() {
       path:'/natural',
       element:<>
       <Natural></Natural>
+      </>
+    },{
+      path:'/rocks',
+      element:<>
+      <Rocks></Rocks>
       </>
     }
   ])

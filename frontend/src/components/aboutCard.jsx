@@ -5,7 +5,7 @@ const AboutCard = ({ question, keyword, description, img, stamp = [] }) => {
   const [strictMode, setStrictMode] = useState(false);
 
   return (
-    <div className="bout relative md:w-[40vw] w-full md:p-5 p-5 pb-12 rounded-lg bg-gray-100">
+    <div className="bout relative md:w-[40vw] w-full md:p-5 md:pb-24 p-5 pb-12 rounded-lg bg-gray-100">
 
       {/* Image (hidden in strict mode) */}
       {!strictMode && (
@@ -18,9 +18,9 @@ const AboutCard = ({ question, keyword, description, img, stamp = [] }) => {
 
       <h5 className="text-sm font-semibold text-gray-600">{question}</h5>
 
-      <h3 className="text-3xl mt-2">{keyword}</h3>
+      <h3 className="md:text-3xl text-2xl  mt-2">{keyword}</h3>
 
-      <p className="text-gray-600">{description}</p>
+      <p className="text-gray-600 md:text-lg text-sm">{description}</p>
 
       {/* Stamps */}
       <div className="mark flex mt-5 gap-2">

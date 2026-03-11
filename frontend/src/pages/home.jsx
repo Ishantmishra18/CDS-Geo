@@ -35,9 +35,11 @@ const Home = () => {
           to="/producer"
           className="bg-black text-white px-6 py-3 rounded-lg text-lg"
         >
-          Begin Practice
+          Indian Map
         </Link>
-
+        <Link to ="/rocks" className="ml-4 bg-gray-800 text-white px-6 py-3 rounded-lg text-lg">
+          Rocks
+        </Link>
       </div>
 
      
