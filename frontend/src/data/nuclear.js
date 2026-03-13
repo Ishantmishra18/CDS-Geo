@@ -37,7 +37,7 @@ export const nuclearPlants = [
 },
 
 {
-  name: "Rajasthan Atomic Power Station",
+  name: "Rawatbhata Atomic Power Station",
   x: "33%",
   y: "42%",
   image: "/nuclear/rajasthan.webp",
@@ -46,12 +46,12 @@ export const nuclearPlants = [
 },
 
 {
-  name: "Madras Atomic Power Station",
+  name: "Kalpakkam Atomic Power Station",
   x: "43%",
   y: "79%",
   image: "/nuclear/kalpakkam.webp",
   description:
-    "Also known as Kalpakkam nuclear facility. It hosts India's Fast Breeder Test Reactor and plays an important role in India's three-stage nuclear power programme."
+    "It hosts India's Fast Breeder Test Reactor and plays an important role in India's three-stage nuclear power programme."
 },
 
 {

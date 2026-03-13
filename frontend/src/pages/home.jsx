@@ -19,10 +19,11 @@ const Home = () => {
       </header>
 
       {/* Hero Section */}
-      <div className="max-w-3xl text-center mt-16 px-6">
+      <div className="flex mx-10 justify-start">
+         <div className="max-w-3xl flex flex-col justify-start mt-16 px-6">
 
         <h2 className="text-4xl font-semibold mb-6">
-          Master Indian Geography for CDS & UPSC
+          Master Geography for CDS , NDA , & AFCAT
         </h2>
 
         <p className="text-gray-600 mb-8">
@@ -31,16 +32,25 @@ const Home = () => {
           Designed specifically for CDS, UPSC, and other competitive exams.
         </p>
 
-        <Link
+        <div className="flex">
+           <Link
           to="/producer"
-          className="bg-black text-white px-6 py-3 rounded-lg text-lg"
+          className="bg-black text-white px-6 py-3 hover:shadow-2xl duration-150 rounded-lg text-lg"
         >
           Indian Map
         </Link>
-        <Link to ="/rocks" className="ml-4 bg-gray-800 text-white px-6 py-3 rounded-lg text-lg">
+        <Link to ="/rocks" className="ml-4 bg-black hover:shadow-2xl duration-150 text-white px-6 py-3 rounded-lg text-lg">
           Rocks
         </Link>
+        </div>
+
+       
       </div>
+      <div className="img w-[60vw] h-[60vh]">
+        <img src="/home/main.webp" alt=""  className="w-full h-full" />
+      </div>
+      </div>
+     
 
      
 

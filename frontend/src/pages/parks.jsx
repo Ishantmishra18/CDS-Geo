@@ -4,6 +4,7 @@ import Navbar from "../components/navbar";
 import AboutCard from "../components/aboutCard";
 import IndiaMap from "../components/indiaMap";
 import React from "react";
+import { navIndia } from "../utility/navLinks";
 
 const Parks = () => {
 
@@ -128,7 +129,7 @@ const Parks = () => {
 
       </div>
 
-      <Navbar />
+      <Navbar items={navIndia} />
 
     </div>
   );

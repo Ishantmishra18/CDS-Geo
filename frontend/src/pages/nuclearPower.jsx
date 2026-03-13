@@ -2,9 +2,9 @@ import { useState, useEffect } from "react";
 import IndiaMap from "../components/indiaMap";
 import { nuclearPlants } from "../data/nuclear";
 import Navbar from "../components/navbar";
-import { GiNuclearPlant } from "react-icons/gi";
 import { IoIosNuclear } from "react-icons/io";
 import AboutCard from "../components/aboutCard";
+import { navIndia } from "../utility/navLinks";
 import React from "react";
 
 function App() {
@@ -114,7 +114,7 @@ function App() {
 
       </div>
 
-      <Navbar />
+      <Navbar items={navIndia} />
       
 
     </div>

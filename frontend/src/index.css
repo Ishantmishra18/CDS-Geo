@@ -7,6 +7,16 @@ path{
     stroke: white;
 }
 
+.world-country path {
+  fill: #9ed89f;
+  stroke: white;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.world-country path:hover {
+  fill: #2e7d32;
+}
+
 /* STATE MODE */
 
 .map-state path {

@@ -8,7 +8,8 @@ const categories = [
   "Sedimentary",
   "Metamorphic"
 ];
-
+const right =  new Audio('/sounds/right.mp3');
+const wrong =  new Audio('/sounds/wrong.mp3');
 const Rocks = () => {
 
   const [rockList, setRockList] = useState([]);
@@ -56,7 +57,7 @@ const Rocks = () => {
     if (clickedCategory === question.category) {
 
       setResultIcon("correct");
-
+        right.play();
       setTimeout(() => {
         setResultIcon(null);
         nextQuestion();
@@ -69,7 +70,7 @@ const Rocks = () => {
     setAttempts(newAttempts);
 
     setResultIcon("wrong");
-
+    wrong.play();
     setTimeout(() => {
       setResultIcon(null);
     }, 1000);
@@ -81,7 +82,7 @@ const Rocks = () => {
   };
 
   return (
-    <div className="p-4 flex  bg-blue-100 h-screen justify-center items-center flex-col md:flex-row gap-6">
+    <div className="p-4 flex  h-screen justify-center items-center flex-col md:flex-row gap-6">
 
       {/* Info Card */}
       <AboutCard

@@ -8,6 +8,7 @@ import Navbar from './components/navbar'
 import Parks from './pages/parks'
 import Producer from './pages/producer'
 import Rocks from './pages/rocks'
+import Geo from './pages/Geo'
 
 function App() {
 
@@ -46,6 +47,11 @@ function App() {
       path:'/rocks',
       element:<>
       <Rocks></Rocks>
+      </>
+    },{
+      path:'/Geo',
+      element:<>
+      <Geo></Geo>
       </>
     }
   ])
