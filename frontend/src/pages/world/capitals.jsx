@@ -73,7 +73,7 @@ const Capitals = () => {
 
   return (
     <div className="relative min-h-screen bg-slate-50 overflow-hidden cursor-crosshair">
-      
+      <div className="fixed top-4 left-4 text-2xl">Capital of Countries</div>
       {/* 4. Floating Question (Follows Cursor) */}
       <div 
         className="fixed pointer-events-none z-[100] px-3 py-1 bg-gray-100 border-2 border-gray-300 rounded-lg transition-transform duration-75 ease-out"

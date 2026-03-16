@@ -184,4 +184,99 @@ export const largestProduction = [
     question: "As it transitions to cleaner energy, which country has become the largest importer of Natural Gas (including LNG)?" 
   }
 ];
+
+
+export const natural = [
+  // LAKES (High priority)
+  { 
+    keyword: "Lake Superior", 
+    country: "United States", 
+    type: "lake",
+    description: "The largest freshwater lake in the world by surface area; famous for vast iron ore (ferrous) deposits in its surrounding ranges." 
+  },
+  { 
+    keyword: "Lake Baikal", 
+    country: "Russia", 
+    type: "lake",
+    description: "The deepest and oldest freshwater lake in the world, formed within a continental rift valley." 
+  },
+  { 
+    keyword: "Lake Victoria", 
+    country: "Tanzania", 
+    type: "lake",
+    description: "Africa's largest lake and the primary reservoir of the River Nile; shared by Uganda, Kenya, and Tanzania." 
+  },
+  { 
+    keyword: "Caspian Sea", 
+    country: "Kazakhstan", 
+    type: "lake",
+    description: "The world's largest inland body of water; classified as both a lake and a full-fledged sea due to its size and salinity." 
+  },
+  { 
+    keyword: "Lake Titicaca", 
+    country: "Bolivia", 
+    type: "lake",
+    description: "The highest navigable lake in the world, located in the Andes Mountains." 
+  },
+
+  // DESERTS & GRASSLANDS
+  { 
+    keyword: "Atacama Desert", 
+    country: "Chile", 
+    type: "desert",
+    description: "The driest non-polar place on Earth; famous for being the world's largest natural supply of Sodium Nitrate." 
+  },
+  { 
+    keyword: "Rub' al Khali", 
+    country: "Saudi Arabia", 
+    type: "desert",
+    description: "Known as the 'Empty Quarter', it is the largest contiguous sand desert in the world." 
+  },
+  { 
+    keyword: "Pampas", 
+    country: "Argentina", 
+    type: "grassland",
+    description: "Vast fertile lowlands famous for wheat cultivation and cattle rearing; a key temperate grassland." 
+  },
+
+  // MOUNTAINS & VOLCANOES
+  { 
+    keyword: "Mount Etna", 
+    country: "Italy", 
+    type: "volcano",
+    description: "One of the world's most active stratovolcanoes, located on the east coast of Sicily." 
+  },
+  { 
+    keyword: "Mount Aconcagua", 
+    country: "Argentina", 
+    type: "mountain",
+    description: "The highest point in both the Western and Southern Hemispheres, part of the Andes Range." 
+  },
+  { 
+    keyword: "Mount Kilimanjaro", 
+    country: "Tanzania", 
+    type: "mountain",
+    description: "A dormant volcano and the highest free-standing mountain in the world." 
+  },
+
+  // UNIQUE FEATURES
+  { 
+    keyword: "Grand Canyon", 
+    country: "United States", 
+    type: "canyon",
+    description: "A steep-sided canyon carved by the Colorado River; a classic example of the erosional power of water." 
+  },
+  { 
+    keyword: "Great Barrier Reef", 
+    country: "Australia", 
+    type: "reef",
+    description: "The world's largest coral reef system, composed of over 2,900 individual reefs." 
+  },
+  { 
+    keyword: "Angel Falls", 
+    country: "Venezuela", 
+    type: "waterfall",
+    description: "The world's highest uninterrupted waterfall, with a height of 979 meters." 
+  }
+];
  

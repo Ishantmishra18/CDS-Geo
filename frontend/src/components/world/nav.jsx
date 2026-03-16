@@ -4,7 +4,8 @@ import { Link } from "react-router-dom";
 const items = [
   { name: "Home", icon: "🏠", path: "/" },
   { name: "Capitals", icon: "📍", path: "/world/capitals" },
-  { name: "Producer", icon: "🌾", path: "/world/producer" }
+  { name: "Producer", icon: "🌾", path: "/world/producer" },
+  { name: "Natural", icon: "🏔", path: "/world/natural" },
 ];
 
 const Navbar = () => {

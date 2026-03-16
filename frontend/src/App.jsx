@@ -11,6 +11,7 @@ import Rocks from './pages/rocks'
 import Geo from './pages/Geo'
 import WCapital from './pages/world/capitals'
 import WProducer from './pages/world/producer'
+import WNatural from './pages/world/natural'
 
 function App() {
 
@@ -64,6 +65,11 @@ function App() {
       path:'/world/capitals',
       element:<>
       <WCapital></WCapital>
+      </>
+    },{
+      path:'/world/natural',
+      element:<>
+      <WNatural></WNatural>
       </>
     }
   ])
