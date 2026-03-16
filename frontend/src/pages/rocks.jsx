@@ -86,12 +86,10 @@ const Rocks = () => {
 
       {/* Info Card */}
       <AboutCard
-        key={index}
         question="Identify the Rock Category"
         keyword={question?.keyword}
         description={question?.description}
         img={question?.keyword ? `/rocks/${question.keyword}.webp` : "/rocks/default.webp"}
-        stamp={[]}
       />
 
       {/* Options */}

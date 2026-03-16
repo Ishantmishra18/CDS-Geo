@@ -3,10 +3,8 @@ import { Link } from "react-router-dom";
 
 const items = [
   { name: "Home", icon: "🏠", path: "/" },
-  { name: "Natural", icon: "🏔", path: "/capitals" },
-  { name: "Parks", icon: "🌲", path: "/parks" },
-  { name: "Nuclear", icon: "☢", path: "/nuclear" },
-  { name: "Producer", icon: "🌾", path: "/producer" }
+  { name: "Capitals", icon: "📍", path: "/world/capitals" },
+  { name: "Producer", icon: "🌾", path: "/world/producer" }
 ];
 
 const Navbar = () => {
@@ -48,7 +46,7 @@ const Navbar = () => {
         {items.map((item) => (
           <Link
             key={item.name}
-            to={`/world${item.path}`}
+            to={item.path}
             className="nav-item group relative flex flex-col items-center transition-all duration-200"
           >
             <span className="text-3xl filter drop-shadow-sm">{item.icon}</span>

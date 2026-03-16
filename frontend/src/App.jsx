@@ -9,8 +9,8 @@ import Parks from './pages/parks'
 import Producer from './pages/producer'
 import Rocks from './pages/rocks'
 import Geo from './pages/Geo'
-import World from './pages/world'
 import WCapital from './pages/world/capitals'
+import WProducer from './pages/world/producer'
 
 function App() {
 
@@ -56,9 +56,9 @@ function App() {
       <Geo></Geo>
       </>
     },{
-      path:'/world',
+      path:'/world/producer',
       element:<>
-      <World></World>
+      <WProducer></WProducer>
       </>
     },{
       path:'/world/capitals',

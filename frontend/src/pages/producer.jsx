@@ -96,7 +96,6 @@ const Parks = () => {
         img={`/producer/${question?.keyword}.webp`}
         question = "Which state is the largest producer of this?"
         keyword={question?.keyword}
-      
       />
 
       <div className="relative">
