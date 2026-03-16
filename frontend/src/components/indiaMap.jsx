@@ -5,7 +5,6 @@ export default function IndiaMap({
   onStateClick,
   onMarkerClick,
   mark, 
-  correctState
 }) {
 
  const handleStateClick = (e) => {

@@ -103,6 +103,21 @@ export const naturalFeatures = [
   state: "Kerala",
   description:
     "The longest lake in India and famous for its backwaters and traditional snake boat races."
-}
+},
+{
+    keyword: "Kaliveli Lake",
+    state: "Tamil Nadu",
+    description: "A large coastal wetland and bird sanctuary, it is one of the most significant biodiversity hotspots on the Coromandel Coast."
+  },
+  {
+    keyword: "Khajjiar Lake",
+    state: "Himachal Pradesh",
+    description: "Often called the 'Mini Switzerland of India,' this lake is surrounded by cedar forests and floating islands of weed."
+  },
+  {
+    keyword: "Khecheopalri Lake",
+    state: "Sikkim",
+    description: "A sacred lake for both Buddhists and Hindus, known as the 'Wishing Lake' and famous for its pristine waters kept clean by birds."
+  }
 
 ];

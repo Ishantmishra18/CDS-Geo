@@ -104,7 +104,6 @@ const Parks = () => {
         <IndiaMap
           mode="state"
           onStateClick={checkResponse}
-          correctState={showAnswer ? question?.state : null}
         />
 
         {resultIcon === "correct" && (

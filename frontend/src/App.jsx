@@ -9,6 +9,8 @@ import Parks from './pages/parks'
 import Producer from './pages/producer'
 import Rocks from './pages/rocks'
 import Geo from './pages/Geo'
+import World from './pages/world'
+import WCapital from './pages/world/capitals'
 
 function App() {
 
@@ -52,6 +54,16 @@ function App() {
       path:'/Geo',
       element:<>
       <Geo></Geo>
+      </>
+    },{
+      path:'/world',
+      element:<>
+      <World></World>
+      </>
+    },{
+      path:'/world/capitals',
+      element:<>
+      <WCapital></WCapital>
       </>
     }
   ])

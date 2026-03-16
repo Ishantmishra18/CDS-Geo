@@ -5,6 +5,7 @@
 
 path{
     stroke: white;
+    fill: #9ed89f;
 }
 
 .world-country path {
@@ -20,7 +21,6 @@ path{
 /* STATE MODE */
 
 .map-state path {
-  fill: #9ed89f;
   stroke: white;
   cursor: pointer;
   transition: 0.2s;

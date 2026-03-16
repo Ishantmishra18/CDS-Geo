@@ -1,11 +1,24 @@
 import React from 'react'
 
-const wordMap = ({mode = "country"}) => {
+const wordMap = ({mode = "country", markers=[]  , onCountryClick}) => {
+
+const handleCountryClick = (e) => {
+
+  if (mode !== "country") return;
+
+  const country = e.target.getAttribute("title");
+  console.log(country)
+
+  if (country && onCountryClick) {
+    onCountryClick(country);
+  }}
+
   return (
     <div className="relative md:w-[1100px] w-full mx-auto">
       <svg
    viewBox="0 0 1020 670"
-      className={`md:w-[1000px] w-full mx-auto ${mode === "country" ? "world-country" : "country-disabled"}`}>
+      className={`md:w-[1000px] w-full mx-auto ${mode === "country" ? "world-country" : "country-disabled"}`}
+      onClick={handleCountryClick}>
  
   <path
      d="m 479.68275,331.6274 -0.077,0.025 -0.258,0.155 -0.147,0.054 -0.134,0.027 -0.105,-0.011 -0.058,-0.091 0.006,-0.139 -0.024,-0.124 -0.02,-0.067 0.038,-0.181 0.086,-0.097 0.119,-0.08 0.188,0.029 0.398,0.116 0.083,0.109 10e-4,0.072 -0.073,0.119 z"
@@ -1032,6 +1045,26 @@ const wordMap = ({mode = "country"}) => {
      title="Zimbabwe"
      id="ZW" />
       </svg>
+
+      {/* MARKERS */}
+      {mode === "marker" &&
+        markers.map((item, i) => (
+          <div
+            key={i}
+            className="bg-red-700 absolute"
+            style={{
+              left: item.markers.x,
+              top: item.markers.y,
+              height: item.markers.l,
+              width: item.markers.b,
+              rotate: item.markers.r
+            }}
+            
+          >
+            
+          </div>
+        ))
+      }
     
     </div>
   )
