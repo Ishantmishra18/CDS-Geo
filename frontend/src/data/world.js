@@ -1,17 +1,4 @@
-export const straitsData = [
-    { keyword: "Gibraltar", description: "Between Spain and Morocco" ,markers:{x: 600, y: 330 , l:30, b:5, r:90} },
-]
-export const mountainsData = [
-    { keyword: "Himalayas", description: "Between India and China" ,markers:{x: 30, y: 80 , l:60, b:40, r:10} },
-    { keyword: "Andes", description: "Along the western coast of South America" ,markers:{x: 30, y: 20 , l:70, b:50, r:15} },
-    { keyword: "Rockies", description: "In western North America" ,markers:{x: 40, y: 30 , l:80, b:60, r:25} },
-]
-export const riversData = [
-    { keyword: "Nile", description: "Flows through northeastern Africa" ,markers:{x: 30, y: 30 , l:50, b:30, r:0} },
-]
-export const desertsData = [
-    { keyword: "Sahara", description: "Covers much of North Africa" ,markers:{x: 30, y: 40 , l:100, b:60, r:0} },
-]
+
 
 
 export const capitalsData = [
@@ -185,7 +172,6 @@ export const largestProduction = [
   }
 ];
 
-
 export const natural = [
   // LAKES (High priority)
   { 
@@ -232,12 +218,7 @@ export const natural = [
     type: "desert",
     description: "Known as the 'Empty Quarter', it is the largest contiguous sand desert in the world." 
   },
-  { 
-    keyword: "Pampas", 
-    country: "Argentina", 
-    type: "grassland",
-    description: "Vast fertile lowlands famous for wheat cultivation and cattle rearing; a key temperate grassland." 
-  },
+ 
 
   // MOUNTAINS & VOLCANOES
   { 
@@ -258,8 +239,6 @@ export const natural = [
     type: "mountain",
     description: "A dormant volcano and the highest free-standing mountain in the world." 
   },
-
-  // UNIQUE FEATURES
   { 
     keyword: "Grand Canyon", 
     country: "United States", 
@@ -273,10 +252,247 @@ export const natural = [
     description: "The world's largest coral reef system, composed of over 2,900 individual reefs." 
   },
   { 
+    keyword: "Ural Mountains", 
+    country: "Russia", 
+    type: "mountain",
+    description: "The primary boundary between Europe and Asia; exceptionally rich in minerals like iron and coal." 
+  },
+  {
+    keyword: "Mount Fuji",
+    country: "Japan",
+    type: "volcano",
+    description: "An active stratovolcano and the highest peak in Japan."
+  },
+  {
+    keyword: "Krakatoa",
+    country: "Indonesia",
+    type: "volcano",
+    description: "Famous for its massive eruption in 1883 causing global climatic effects."
+  },
+  { 
+    keyword: "Drakensberg", 
+    country: "South Africa", 
+    type: "mountain",
+    description: "The highest mountain range in Southern Africa, forming the Great Escarpment." 
+  },
+  { 
+    keyword: "The Alps", 
+    country: "Switzerland", 
+    type: "mountain",
+    description: "The highest and most extensive mountain range system in Europe, formed by the African and Eurasian plates." 
+  },
+  { 
+    keyword: "Mount Stromboli", 
+    country: "Italy", 
+    type: "volcano",
+    description: "Known as the 'Lighthouse of the Mediterranean' due to its near-continuous activity since ancient times." 
+  },
+  { 
+    keyword: "Guallatiri", 
+    country: "Chile", 
+    type: "volcano",
+    description: "One of the highest active volcanoes in the world, located in the Andes near the Bolivia border." 
+  },
+  { 
+    keyword: "Mount Cotopaxi", 
+    country: "Ecuador", 
+    type: "volcano",
+    description: "A famous high-altitude active stratovolcano in the Andes; known for its nearly symmetrical cone." 
+  },
+  { 
+    keyword: "Mount Vesuvius", 
+    country: "Italy", 
+    type: "volcano",
+    description: "The only active volcano on the European mainland; historic for the 79 AD eruption." 
+  },
+  { 
+    keyword: "Barren Island", 
+    country: "India", 
+    type: "volcano",
+    description: "The only active volcano in South Asia, located in the Andaman and Nicobar Islands chain." 
+  },
+  { 
+    keyword: "Mauna Loa", 
+    country: "United States", 
+    type: "volcano",
+    description: "The largest subaerial volcano in the world, characterized by its massive shield shape." 
+  },
+  { 
+    keyword: "Mount Merapi", 
+    country: "Indonesia", 
+    type: "volcano",
+    description: "Part of the Ring of Fire; it is considered the most active volcano in Indonesia." 
+  },
+  { 
+    keyword: "Mount Erebus", 
+    country: "Antarctica", 
+    type: "volcano",
+    description: "The southernmost active volcano on Earth, famous for its persistent convecting lava lake." 
+  },
+  { 
+    keyword: "Ojos del Salado", 
+    country: "Argentina", 
+    type: "volcano",
+    description: "The highest volcano on Earth (6,893m) and the second-highest mountain in the Western Hemisphere." 
+  },
+  { 
+    keyword: "Mount Pinatubo", 
+    country: "Philippines", 
+    type: "volcano",
+    description: "Site of a massive 1991 eruption that caused a temporary drop in global temperatures." 
+  },
+  { 
+    keyword: "Narcondam Island", 
+    country: "India", 
+    type: "volcano",
+    description: "A dormant volcanic island in the Andaman Sea; often asked in Indian geography sections." 
+  },
+
+
+  //grasslands
+   { 
+    keyword: "Pampas", 
+    country: "Argentina", 
+    type: "grassland",
+    description: "Vast fertile lowlands famous for wheat cultivation and cattle rearing; a key temperate grassland." 
+  },
+  { 
+    keyword: "Steppes", 
+    country: "Russia", 
+    type: "grassland",
+    description: "Vast temperate grasslands stretching from Ukraine to eastern Russia; known as the 'Granary of the World'." 
+  },
+  { 
+    keyword: "Velds", 
+    country: "South Africa", 
+    type: "grassland",
+    description: "High-altitude temperate grasslands in Southern Africa; famous for maize cultivation and cattle ranching." 
+  },
+  { 
+    keyword: "Downs", 
+    country: "Australia", 
+    type: "grassland",
+    description: "Temperate grasslands in the Murray-Darling basin, crucial for sheep rearing and wheat." 
+  },
+  { 
+    keyword: "Prairies", 
+    country: "Canada", 
+    type: "grassland",
+    description: "North American temperate grasslands; famous for extensive mechanized wheat farming." 
+  },
+
+  // WATER BODIES & STRAITS (Strategic for CDS)
+  { 
+    keyword: "Dead Sea", 
+    country: "Jordan", 
+    type: "lake",
+    description: "An endorheic salt lake and the lowest land point on Earth; famous for its high salinity and buoyancy." 
+  },
+  { 
+    keyword: "Lake Tanganyika", 
+    country: "Democratic Republic of the Congo", 
+    type: "lake",
+    description: "The longest freshwater lake in the world and part of the Great Rift Valley system." 
+  },{ 
     keyword: "Angel Falls", 
     country: "Venezuela", 
     type: "waterfall",
     description: "The world's highest uninterrupted waterfall, with a height of 979 meters." 
+  },
+
+  // DESERTS & PHENOMENA
+  { 
+    keyword: "Gobi Desert", 
+    country: "Mongolia", 
+    type: "desert",
+    description: "A cold winter desert created by the rain shadow effect of the Himalayas." 
+  },
+  { 
+    keyword: "Kalahari Desert", 
+    country: "Botswana", 
+    type: "desert",
+    description: "A large semi-arid sandy savannah in Southern Africa; home to the Orange River." 
+  },
+  { 
+    keyword: "Suez Canal", 
+    country: "Egypt", 
+    type: "canal",
+    description: "An artificial sea-level waterway connecting the Mediterranean Sea to the Red Sea." 
   }
 ];
+
+export const currencies = [
+  { 
+    keyword: "Rupee", 
+    country: "India", 
+    type: "INR", 
+    description: "The symbol ₹ was designed by D. Udaya Kumar, blending Devanagari 'र' and Roman 'R'." 
+  },
+  { 
+    keyword: "Yen", 
+    country: "Japan", 
+    type: "JPY", 
+    description: "A major global reserve currency; the name literally translates to 'round object'." 
+  },
+  { 
+    keyword: "Pound Sterling", 
+    country: "United Kingdom", 
+    type: "GBP", 
+    description: "The world's oldest currency still in use; issued by the Bank of England." 
+  },
+  { 
+    keyword: "Swiss Franc", 
+    country: "Switzerland", 
+    type: "CHF", 
+    description: "Often called a 'Safe Haven' currency because of the country's economic stability." 
+  },
+  { 
+    keyword: "Ruble", 
+    country: "Russia", 
+    type: "RUB", 
+    description: "The first currency in Europe to be decimalized (1 ruble = 100 kopeks) in 1704." 
+  },
+  { 
+    keyword: "Rand", 
+    country: "South Africa", 
+    type: "ZAR", 
+    description: "Named after the 'Witwatersrand' ridge, where most of the country's gold was found." 
+  },
+  { 
+    keyword: "Real", 
+    country: "Brazil", 
+    type: "BRL", 
+    description: "Introduced as part of a plan to stop hyperinflation in the mid-1990s." 
+  },
+  { 
+    keyword: "Won", 
+    country: "South Korea", 
+    type: "KRW", 
+    description: "The currency's name is derived from the same origin as the Yuan and the Yen." 
+  },
+  { 
+    keyword: "Lira", 
+    country: "Turkey", 
+    type: "TRY", 
+    description: "Re-denominated in 2005; one 'New Lira' was worth one million 'Old Lira'." 
+  },
+  { 
+    keyword: "Baht", 
+    country: "Thailand", 
+    type: "THB", 
+    description: "Originally a unit of weight for gold/silver; it is one of the strongest currencies in SE Asia." 
+  },
+  { 
+    keyword: "Dirham", 
+    country: "United Arab Emirates", 
+    type: "AED", 
+    description: "Its value is pegged to the US Dollar ($1 = approx. 3.67 AED)." 
+  },
+  { 
+    keyword: "Shekel", 
+    country: "Israel", 
+    type: "ILS", 
+    description: "The name refers to an ancient unit of weight used for trading grain and silver." 
+  }
+]
  

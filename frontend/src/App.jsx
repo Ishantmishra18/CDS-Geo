@@ -12,7 +12,8 @@ import Geo from './pages/Geo'
 import WCapital from './pages/world/capitals'
 import WProducer from './pages/world/producer'
 import WNatural from './pages/world/natural'
-
+import PolList from './pages/polity/list'
+import Currency from './pages/world/currency'
 function App() {
 
   const router=createBrowserRouter([
@@ -70,6 +71,16 @@ function App() {
       path:'/world/natural',
       element:<>
       <WNatural></WNatural>
+      </>
+    },{
+      path:'/polity',
+      element:<>
+      <PolList></PolList>
+      </>
+    },{
+      path:'/world/currency',
+      element:<>
+      <Currency></Currency>
       </>
     }
   ])

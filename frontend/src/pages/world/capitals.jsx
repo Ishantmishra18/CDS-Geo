@@ -47,7 +47,7 @@ const Capitals = () => {
 
     if (isCorrect) {
       // Play Sound
-      new Audio('/music/right.mp3').play().catch(e => console.log("Audio play failed"));
+      new Audio('/sounds/right.mp3').play().catch(e => console.log("Audio play failed"));
       
       setResultIcon("correct");
       
@@ -56,7 +56,7 @@ const Capitals = () => {
       }, 1200);
     } else {
       // Play Sound
-      new Audio('/music/wrong.mp3').play().catch(e => console.log("Audio play failed"));
+      new Audio('/sounds/wrong.mp3').play().catch(e => console.log("Audio play failed"));
       
       setResultIcon("wrong");
       const newAttempts = attempts + 1;

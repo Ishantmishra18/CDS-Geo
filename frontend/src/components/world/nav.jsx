@@ -6,6 +6,7 @@ const items = [
   { name: "Capitals", icon: "📍", path: "/world/capitals" },
   { name: "Producer", icon: "🌾", path: "/world/producer" },
   { name: "Natural", icon: "🏔", path: "/world/natural" },
+  { name: "Currency", icon: "💰", path: "/world/currency" },
 ];
 
 const Navbar = () => {
