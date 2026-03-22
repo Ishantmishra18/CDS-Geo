@@ -14,6 +14,7 @@ import WProducer from './pages/world/producer'
 import WNatural from './pages/world/natural'
 import PolList from './pages/polity/list'
 import Currency from './pages/world/currency'
+import Equipment from './pages/military/equipment'
 function App() {
 
   const router=createBrowserRouter([
@@ -81,6 +82,11 @@ function App() {
       path:'/world/currency',
       element:<>
       <Currency></Currency>
+      </>
+    },{
+      path:'/military/equipment',
+      element:<>
+      <Equipment></Equipment>
       </>
     }
   ])

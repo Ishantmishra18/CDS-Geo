@@ -169,6 +169,11 @@ export const largestProduction = [
     country: "China", 
     type: "importer", 
     question: "As it transitions to cleaner energy, which country has become the largest importer of Natural Gas (including LNG)?" 
+  },{
+    keyword: "Uranium",
+    country: "Kazakhstan",
+    type: "producer/exporter",
+    question: "Which country is the world's largest producer of Uranium, a key fuel for nuclear energy?"
   }
 ];
 
@@ -217,6 +222,16 @@ export const natural = [
     country: "Saudi Arabia", 
     type: "desert",
     description: "Known as the 'Empty Quarter', it is the largest contiguous sand desert in the world." 
+  },{
+    keyword: "Sahara Desert",
+    country: "Algeria",
+    type: "desert",
+    description: "The largest hot desert in the world, covering much of North Africa; famous for its vast sand dunes and rich oil reserves."
+  },{
+    keyword:"kalahari desert",
+    country:"Botswana",
+    type:"desert",
+    description:"A large semi-arid sandy savannah in Southern Africa; home to the Orange River and unique flora and fauna adapted to arid conditions."
   },
  
 
@@ -346,6 +361,21 @@ export const natural = [
     country: "India", 
     type: "volcano",
     description: "A dormant volcanic island in the Andaman Sea; often asked in Indian geography sections." 
+  },{
+    keyword:"Chimborazo",
+    country:"Ecuador",
+    type:"volcano",
+    description:"The point on Earth's surface farthest from the center of the Earth due to equatorial bulge, despite not being the tallest mountain above sea level."
+  },{
+    keyword:"Mount Kilmanjaro",
+    country:"Tanzania",
+    type:"mountain",
+    description:"The highest free-standing mountain in the world, composed of three volcanic cones: Kibo, Mawenzi, and Shira."
+  },{
+    keyword:"Mount Buninyong",
+    country:"Australia",
+    type:"volcano",
+    description:"An extinct volcano located in Victoria, known for its rich volcanic soils and historical significance to indigenous Australians."
   },
 
 

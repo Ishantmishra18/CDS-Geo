@@ -38,6 +38,9 @@ const Home = () => {
         <Link to='/world/capitals' className="ml-4 bg-black hover:shadow-2xl duration-150 text-white px-6 py-3 rounded-lg text-lg">
           World
         </Link>
+        <Link to='/military/equipment' className="ml-4 bg-black hover:shadow-2xl duration-150 text-white px-6 py-3 rounded-lg text-lg">
+          Military
+        </Link>
         </div>
 
        
