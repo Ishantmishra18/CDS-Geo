@@ -15,6 +15,7 @@ import WNatural from './pages/world/natural'
 import PolList from './pages/polity/list'
 import Currency from './pages/world/currency'
 import Equipment from './pages/military/equipment'
+import  Vitanims from './pages/biology/vitamin'
 function App() {
 
   const router=createBrowserRouter([
@@ -88,6 +89,10 @@ function App() {
       element:<>
       <Equipment></Equipment>
       </>
+    },{
+      path:'bio/vit',
+      element:<Vitanims/>
+
     }
   ])
  

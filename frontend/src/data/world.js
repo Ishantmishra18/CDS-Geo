@@ -174,7 +174,17 @@ export const largestProduction = [
     country: "Kazakhstan",
     type: "producer/exporter",
     question: "Which country is the world's largest producer of Uranium, a key fuel for nuclear energy?"
-  }
+},
+{
+    keyword:"Diamond",
+    country:"Russia",
+    type:"producer"
+},
+{
+    keyword:"Diamond",
+    country:"India",
+    type:"exporter"
+}
 ];
 
 export const natural = [
@@ -505,6 +515,12 @@ export const currencies = [
     country: "Turkey", 
     type: "TRY", 
     description: "Re-denominated in 2005; one 'New Lira' was worth one million 'Old Lira'." 
+  },
+  {
+    keyword:"Deutsche mark",
+    country: "Germany",
+    type: "DEM",
+    description: "The former currency of West Germany, replaced by the Euro in 2002."
   },
   { 
     keyword: "Baht", 

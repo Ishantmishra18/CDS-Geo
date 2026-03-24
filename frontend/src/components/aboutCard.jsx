@@ -1,14 +1,13 @@
 import React, { useState } from "react";
 
-const AboutCard = ({ question, keyword, description, img, stamp = [] }) => {
-
+const AboutCard = ({ question, keyword, description, img = null, stamp = [] }) => {
   const [strictMode, setStrictMode] = useState(false);
 
   return (
     <div className="bout relative md:w-[40vw] w-full md:p-5 md:pb-24 p-5 pb-12 rounded-lg bg-gray-100">
-
-      {/* Image (hidden in strict mode) */}
-      {!strictMode && (
+      
+      {/* 1. Logic: Only render Image if img exists AND strictMode is OFF */}
+      {img && !strictMode && (
         <img
           src={img}
           alt=""
@@ -18,7 +17,7 @@ const AboutCard = ({ question, keyword, description, img, stamp = [] }) => {
 
       <h5 className="text-sm font-semibold text-gray-600">{question}</h5>
 
-      <h3 className="md:text-3xl text-2xl  mt-2">{keyword}</h3>
+      <h3 className="md:text-3xl text-2xl mt-2">{keyword}</h3>
 
       <p className="text-gray-600 md:text-lg text-sm">{description}</p>
 
@@ -29,19 +28,19 @@ const AboutCard = ({ question, keyword, description, img, stamp = [] }) => {
         ))}
       </div>
 
-      {/* Toggle */}
-      <div className="absolute md:right-6 md:bottom-6 right-3 bottom-3">
-
-        <button
-          onClick={() => setStrictMode(!strictMode)}
-          className={`px-3 py-1 rounded-full text-sm transition 
-          ${strictMode ? "bg-gray-500 text-white" : "bg-gray-300"}`}
-        >
-          {strictMode ? "Strict Mode ON" : "Strict Mode OFF"}
-        </button>
-
-      </div>
-
+      {/* 2. Logic: Only render Toggle Container if img is provided */}
+      {img && (
+        <div className="absolute md:right-6 md:bottom-6 right-3 bottom-3">
+          <button
+            onClick={() => setStrictMode(!strictMode)}
+            className={`px-3 py-1 rounded-full text-sm transition 
+            ${strictMode ? "bg-gray-500 text-white" : "bg-gray-300"}`}
+          >
+            {strictMode ? "Strict Mode ON" : "Strict Mode OFF"}
+          </button>
+        </div>
+      )}
+      
     </div>
   );
 };

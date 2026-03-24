@@ -102,7 +102,7 @@ const Producer = () => {
 
         <div className="p-4">
           <p className='text-[10px] uppercase font-black text-blue-600 tracking-tighter'>
-            Largest {question?.type}
+            {question?.type}
           </p>
           <h2 className="text-xl font-black text-gray-900 leading-tight mb-1">
             {question?.keyword}
