@@ -39,7 +39,10 @@ export const largestProduction = [
   keyword: "Jute",
   state: "West Bengal"
 },
-
+{
+  keyword:"Urunium",
+  state:"Jharkhand"
+},
 {
   keyword: "Spices",
   state: "Kerala"

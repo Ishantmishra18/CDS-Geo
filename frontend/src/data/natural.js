@@ -5,6 +5,10 @@ export const naturalFeatures = [
   state: "Karnataka",
   description:
     "One of the highest waterfalls in India formed by the Sharavathi River. It drops in four distinct cascades called Raja, Rani, Roarer, and Rocket."
+},{
+keyword:"baba budan hills",
+state:"Karnataka",
+description:"A mountain range in the Western Ghats named after the Sufi saint Baba Budan, who is said to have introduced coffee to India by smuggling seven coffee beans from Yemen and planting them on this hill."
 },
 
 {

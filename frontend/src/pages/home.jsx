@@ -30,8 +30,21 @@ const Home = () => {
       description: "Military hardware, aircraft, and tactical knowledge for SSB & written exams.",
       links: [
         { name: "Military Equipment", path: "/military/equipment" },
+        { name: "Awards & Honors", path: "/award" },
       ],
+      
       bgColor: "bg-zinc-100",
+      accentColor: "text-zinc-800",
+      borderColor: "border-zinc-300",
+    },
+    {
+      title: "SSB & Strategy",
+      description: "Prepare for the SSB interview and written exams with our comprehensive strategy guides.",
+      links: [
+        { name: "PPDT", path: "/ssb/ppdt" },
+      ],
+      
+      bgColor: "bg-blue-100",
       accentColor: "text-zinc-800",
       borderColor: "border-zinc-300",
     },

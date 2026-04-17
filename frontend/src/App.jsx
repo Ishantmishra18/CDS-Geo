@@ -16,6 +16,8 @@ import PolList from './pages/polity/list'
 import Currency from './pages/world/currency'
 import Equipment from './pages/military/equipment'
 import  Vitanims from './pages/biology/vitamin'
+import Award from './pages/award'
+import Ppdt from './pages/ssb/ppdt'
 function App() {
 
   const router=createBrowserRouter([
@@ -92,7 +94,12 @@ function App() {
     },{
       path:'bio/vit',
       element:<Vitanims/>
-
+    },{
+      path:'/award',
+      element:<Award/>
+    },{
+      path:'/ssb/ppdt',
+      element:<Ppdt/>
     }
   ])
  
