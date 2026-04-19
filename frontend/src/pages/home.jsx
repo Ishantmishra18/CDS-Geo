@@ -9,7 +9,7 @@ const Home = () => {
       links: [
         { name: "Indian Map", path: "/producer" },
         { name: "Rocks & Minerals", path: "/rocks" },
-        { name: "World Capitals", path: "/world/capitals" },
+        { name: "World Map  ", path: "/world/capitals" },
       ],
       bgColor: "bg-emerald-50",
       accentColor: "text-emerald-700",
@@ -19,7 +19,8 @@ const Home = () => {
       title: "General Science",
       description: "High-yield Biology and Physics topics for the CDS General Science paper.",
       links: [
-        { name: "Vitamins & Diseases", path: "/bio/vit" },
+        { name: "Vitamins", path: "/bio/vit" },
+        { name: "Biology Diseases", path: "/bio/disease" }
       ],
       bgColor: "bg-blue-50",
       accentColor: "text-blue-700",

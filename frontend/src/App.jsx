@@ -18,6 +18,7 @@ import Equipment from './pages/military/equipment'
 import  Vitanims from './pages/biology/vitamin'
 import Award from './pages/award'
 import Ppdt from './pages/ssb/ppdt'
+import Disease from './pages/biology/disease'
 function App() {
 
   const router=createBrowserRouter([
@@ -100,6 +101,9 @@ function App() {
     },{
       path:'/ssb/ppdt',
       element:<Ppdt/>
+    },{
+      path:'/bio/disease',
+      element:<Disease/>
     }
   ])
  

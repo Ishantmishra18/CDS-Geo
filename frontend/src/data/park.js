@@ -26,7 +26,7 @@ export const nationalParks = [
   {
     name: "Sundarbans National Park",
     state: "West Bengal",
-    stamp: ["ramser"],
+    stamp: ["ramsar"],
     image: "/parkImages/sundarbans.webp",
     description:
       "The Sundarbans is the largest mangrove forest in the world and home to the famous Royal Bengal Tiger. It is a designated Ramsar site."
@@ -82,7 +82,7 @@ export const nationalParks = [
   {
     name: "Keoladeo National Park",
     state: "Rajasthan",
-    stamp: ["unesco", "ramser"],
+    stamp: ["unesco", "ramsar"],
     image: "/parkImages/keoladeo.webp",
     description:
       "Formerly known as Bharatpur Bird Sanctuary, it is a UNESCO World Heritage Site and a major wintering ground for Palaearctic migratory waterfowl."
@@ -90,7 +90,7 @@ export const nationalParks = [
   {
     name: "Sultanpur National Park",
     state: "Haryana",
-    stamp: ["ramser"],
+    stamp: ["ramsar"],
     image: "/parkImages/sultanpur.webp",
     description:
       "Sultanpur National Park is a haven for migratory birds and is designated as a Ramsar site."
@@ -98,7 +98,7 @@ export const nationalParks = [
   {
     name: "Nandur Madhameshwar Wildlife Sanctuary",
     state: "Maharashtra",
-    stamp: ["ramser"],
+    stamp: ["ramsar"],
     image: "/parkImages/nandur.webp",
     description:
       "Maharashtra's first Ramsar site, it is a wetland of international importance located at the confluence of the Godavari and Kadva rivers."
@@ -106,7 +106,7 @@ export const nationalParks = [
   {
     name: "Chilika Lake",
     state: "Odisha",
-    stamp: ["ramser"],
+    stamp: ["ramsar"],
     image: "/parkImages/chilika.webp",
     description:
       "Asia's largest and world's second-largest lagoon, Chilika Lake is a premier Ramsar site known for its rich biodiversity and as a haven for migratory birds."
@@ -114,7 +114,7 @@ export const nationalParks = [
   {
     name: "Loktak Lake",
     state: "Manipur",
-    stamp: ["ramser"],
+    stamp: ["ramsar"],
     image: "/parkImages/loktak.webp",
     description:
       "Famous for its floating 'phumdis', Loktak Lake is the largest freshwater lake in Northeast India and a designated Ramsar site."
@@ -122,7 +122,7 @@ export const nationalParks = [
   {
     name: "Ashtamudi Lake",
     state: "Kerala",
-    stamp: ["ramser"],
+    stamp: ["ramsar"],
     image: "/parkImages/ashtamudi.webp",
     description:
       "Ashtamudi Lake is a large, brackish water estuarine system and a Ramsar site, known for its houseboat tourism and rich ecosystem."
@@ -130,7 +130,7 @@ export const nationalParks = [
   {
     name: "Pong Dam Lake Wildlife Sanctuary",
     state: "Himachal Pradesh",
-    stamp: ["ramser"],
+    stamp: ["ramsar"],
     image: "/parkImages/pong.webp",
     description:
       "Also known as Maharana Pratap Sagar, it is a man-made reservoir and a Ramsar site that attracts a large number of migratory birds."
@@ -138,7 +138,7 @@ export const nationalParks = [
   {
     name: "Deepor Beel",
     state: "Assam",
-    stamp: ["ramser"],
+    stamp: ["ramsar"],
     image: "/parkImages/deepor.webp",
     description:
       "A permanent freshwater lake and a Ramsar site on the outskirts of Guwahati, serving as a vital habitat for wildlife and a source of livelihood."
