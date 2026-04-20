@@ -19,6 +19,7 @@ import  Vitanims from './pages/biology/vitamin'
 import Award from './pages/award'
 import Ppdt from './pages/ssb/ppdt'
 import Disease from './pages/biology/disease'
+import Ranks from './pages/military/ranks'
 function App() {
 
   const router=createBrowserRouter([
@@ -92,6 +93,9 @@ function App() {
       element:<>
       <Equipment></Equipment>
       </>
+    },{
+      path:'/military/ranks',
+      element:<Ranks/>
     },{
       path:'bio/vit',
       element:<Vitanims/>

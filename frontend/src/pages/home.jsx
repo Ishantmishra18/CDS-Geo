@@ -30,6 +30,7 @@ const Home = () => {
       title: "Defense & Strategic",
       description: "Military hardware, aircraft, and tactical knowledge for SSB & written exams.",
       links: [
+        {name: "Military Ranks", path: "/military/ranks"},
         { name: "Military Equipment", path: "/military/equipment" },
         { name: "Awards & Honors", path: "/award" },
       ],
