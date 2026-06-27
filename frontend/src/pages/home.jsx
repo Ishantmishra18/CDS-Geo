@@ -49,7 +49,14 @@ const Home = () => {
       bgColor: "bg-blue-100",
       accentColor: "text-zinc-800",
       borderColor: "border-zinc-300",
-    },
+    }, 
+    {
+      title: "Polity & Governance",
+      description: "Understand the structure and functioning of the Indian government and its policies.",
+      links: [
+        { name: "Polity Articles", path: "/polity/article" },
+      ],
+    }
   ];
 
   return (

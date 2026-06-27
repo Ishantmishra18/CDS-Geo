@@ -20,6 +20,7 @@ import Award from './pages/award'
 import Ppdt from './pages/ssb/ppdt'
 import Disease from './pages/biology/disease'
 import Ranks from './pages/military/ranks'
+import Article from './pages/polity/article'
 function App() {
 
   const router=createBrowserRouter([
@@ -108,6 +109,9 @@ function App() {
     },{
       path:'/bio/disease',
       element:<Disease/>
+    },{
+      path:'/polity/article',
+      element:<Article/>
     }
   ])
  
