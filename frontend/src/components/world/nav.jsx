@@ -7,6 +7,7 @@ const items = [
   { name: "Producer", icon: "🌾", path: "/world/producer" },
   { name: "Natural", icon: "🏔", path: "/world/natural" },
   { name: "Currency", icon: "💰", path: "/world/currency" },
+  { name: "Exercise" ,icon: "⚔️" , path : "/world/exercise"}
 ];
 
 const Navbar = () => {

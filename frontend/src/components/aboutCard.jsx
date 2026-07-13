@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 
-const AboutCard = ({ question, keyword, description, img = null, stamp = [] }) => {
+const AboutCard = ({ question, keyword, description, img = null, stamp = [] , children }) => {
   const [strictMode, setStrictMode] = useState(false);
 
   return (
     <div className="bout relative md:w-[40vw] w-full md:p-5 md:pb-24 p-5 pb-12 rounded-lg bg-gray-100">
+      {children}
       
       {/* 1. Logic: Only render Image if img exists AND strictMode is OFF */}
       {img && !strictMode && (

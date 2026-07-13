@@ -1,6 +1,58 @@
-export const lists =[
-    { keyword: "Education" , under : "State List"}
-]
+export const lists = [
+  // Union List
+  { keyword: "Defence", under: "Union List" },
+  { keyword: "Foreign Affairs", under: "Union List" },
+  { keyword: "Citizenship", under: "Union List" },
+  { keyword: "Currency & Coinage", under: "Union List" },
+  { keyword: "Banking", under: "Union List" },
+  { keyword: "Railways", under: "Union List" },
+  { keyword: "Airways", under: "Union List" },
+  { keyword: "National Highways", under: "Union List" },
+  { keyword: "Posts & Telegraph", under: "Union List" },
+  { keyword: "Telecommunications", under: "Union List" },
+  { keyword: "Atomic Energy", under: "Union List" },
+  { keyword: "Space", under: "Union List" },
+  { keyword: "Income Tax", under: "Union List" },
+  { keyword: "Customs Duties", under: "Union List" },
+  { keyword: "Union Public Services", under: "Union List" },
+
+  // State List
+  { keyword: "Public Order", under: "State List" },
+  { keyword: "Police", under: "State List" },
+  { keyword: "Public Health", under: "State List" },
+  { keyword: "Hospitals", under: "State List" },
+  { keyword: "Agriculture", under: "State List" },
+  { keyword: "Irrigation", under: "State List" },
+  { keyword: "Land", under: "State List" },
+  { keyword: "Fisheries", under: "State List" },
+  { keyword: "Markets & Fairs", under: "State List" },
+  { keyword: "Local Government", under: "State List" },
+  { keyword: "State Public Services", under: "State List" },
+  { keyword: "Betting & Gambling", under: "State List" },
+  { keyword: "Burials & Cremations", under: "State List" },
+
+  // Concurrent List
+  { keyword: "Education", under: "Concurrent List" },
+  { keyword: "Forests", under: "Concurrent List" },
+  { keyword: "Wildlife Protection", under: "Concurrent List" },
+  { keyword: "Marriage", under: "Concurrent List" },
+  { keyword: "Divorce", under: "Concurrent List" },
+  { keyword: "Adoption", under: "Concurrent List" },
+  { keyword: "Succession", under: "Concurrent List" },
+  { keyword: "Transfer of Property", under: "Concurrent List" },
+  { keyword: "Contracts", under: "Concurrent List" },
+  { keyword: "Labour Welfare", under: "Concurrent List" },
+  { keyword: "Trade Unions", under: "Concurrent List" },
+  { keyword: "Electricity", under: "Concurrent List" },
+  { keyword: "Economic & Social Planning", under: "Concurrent List" },
+  { keyword: "Population Control", under: "Concurrent List" },
+  { keyword: "Criminal Law", under: "Concurrent List" },
+  { keyword: "Criminal Procedure", under: "Concurrent List" },
+  { keyword: "Civil Procedure", under: "Concurrent List" },
+  { keyword: "Prevention of Cruelty to Animals", under: "Concurrent List" }
+];
+
+
 
 export const articles = [
 

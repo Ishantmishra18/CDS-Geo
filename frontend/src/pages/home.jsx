@@ -55,6 +55,7 @@ const Home = () => {
       description: "Understand the structure and functioning of the Indian government and its policies.",
       links: [
         { name: "Polity Articles", path: "/polity/article" },
+        {name: "Lists" , path: "/polity/list"}
       ],
     }
   ];

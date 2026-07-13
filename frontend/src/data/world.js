@@ -542,3 +542,37 @@ export const currencies = [
   }
 ]
  
+
+export const exercisesData = [
+  // INDIA + COUNTRIES
+
+  { keyword: "Yudh Abhyas", country: "United States" },
+  { keyword: "Indra", country: "Russia" },
+  { keyword: "Varuna", country: "France" },
+  { keyword: "Garuda", country: "France" },
+  { keyword: "Shakti", country: "France" },
+  { keyword: "Austrahind", country: "Australia" },
+  { keyword: "Pitch Black", country: "Australia" },
+  { keyword: "AUSINDEX", country: "Australia" },
+  { keyword: "Ajeya Warrior", country: "United Kingdom" },
+  { keyword: "Konkan", country: "United Kingdom" },
+  { keyword: "Surya Kiran", country: "Nepal" },
+  { keyword: "Sino-India Hand-in-Hand", country: "China" },
+  { keyword: "Mitra Shakti", country: "Sri Lanka" },
+  { keyword: "Sahyog-Kaijin", country: "Japan" },
+  { keyword: "JIMEX", country: "Japan" },
+  { keyword: "DUSTLIK", country: "Uzbekistan" },
+  { keyword: "Nomadic Elephant", country: "Mongolia" },
+  { keyword: "Ekuverin", country: "Maldives" },
+  { keyword: "Cope India", country: "United States" },
+  { keyword: "SLINEX", country: "Sri Lanka" },
+  { keyword: "SIMBEX", country: "Singapore" },
+  { keyword: "Bongosagar", country: "Bangladesh" },
+  { keyword: "SAMPRITI", country: "Bangladesh" },
+  { keyword: "Vajra Prahar", country: "United States" },
+  { keyword: "Hand-in-Hand", country: "China" },
+  { keyword: "Cobra Gold", country: "Thailand" },
+  { keyword: "Saddle Up", country: "Kyrgyzstan" },
+  { keyword: "CYNEX", country: "Cyprus" },
+  { keyword: "Tarkash", country: "United States" },
+];

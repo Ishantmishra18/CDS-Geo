@@ -21,6 +21,10 @@ import Ppdt from './pages/ssb/ppdt'
 import Disease from './pages/biology/disease'
 import Ranks from './pages/military/ranks'
 import Article from './pages/polity/article'
+import Exercise from './pages/world/exercise'
+import Lists from './pages/polity/list'
+import River from './pages/india/rivers'
+import Culture from './pages/india/culture'
 function App() {
 
   const router=createBrowserRouter([
@@ -112,6 +116,18 @@ function App() {
     },{
       path:'/polity/article',
       element:<Article/>
+    },{
+      path:'/world/exercise',
+      element:<Exercise/>
+    },{
+      path:'/polity/list',
+      element:<Lists/>
+    },{
+      path:'/india/river',
+      element:<River/>
+    },{
+      path:'/india/culture', 
+      element:<Culture/>
     }
   ])
  
