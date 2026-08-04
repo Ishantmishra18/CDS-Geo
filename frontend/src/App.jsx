@@ -25,6 +25,9 @@ import Exercise from './pages/world/exercise'
 import Lists from './pages/polity/list'
 import River from './pages/india/rivers'
 import Culture from './pages/india/culture'
+import Tribe from './pages/india/tribes'
+import Figures from './Pages/histro/figures'
+
 function App() {
 
   const router=createBrowserRouter([
@@ -128,6 +131,12 @@ function App() {
     },{
       path:'/india/culture', 
       element:<Culture/>
+    },{
+      path:'/india/tribes',
+      element:<Tribe/>
+    },{
+      path:'/history/figure',
+      element:<Figures/>
     }
   ])
  

@@ -8,7 +8,9 @@ const items = [
   { name: "Nuclear", icon: "☢", path: "/nuclear" },
   { name: "Producer", icon: "🌾", path: "/producer" },
   { name: "Rivers" , icon: "🌊" , path:"/india/river"},
-  { name: "Culture" , icon: "🎭" , path:"/india/culture"}
+  { name: "Culture" , icon: "🎭" , path:"/india/culture"},{
+    name: "Tribes" , icon: "👹" , path:"/india/tribes"
+  }
 ];
 
 const Navbar = () => {

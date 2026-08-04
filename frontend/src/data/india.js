@@ -191,7 +191,7 @@ export const cultureList = [
   {
     name: "Losar",
     state: "Ladakh",
-    type: "Festival",
+    type: "Festival",  
     description:
       "A traditional New Year festival marked by prayers, masked dances, rituals, and family gatherings. It is celebrated during December or January according to the lunar calendar."
   },
@@ -441,4 +441,267 @@ export const cultureList = [
       "A sacred monastic dance performed by monks wearing elaborate masks during religious festivals based on the lunar calendar."
   }
 ];
+
+export const tribeList = [
+  {
+    name: "Gond",
+    state: "Madhya Pradesh",
+    description:
+      "One of India's largest tribal communities, known for their rich folklore, traditional agriculture, and distinctive Gond art."
+  },
+  {
+    name: "Bhil",
+    state: "Rajasthan",
+    description:
+      "One of the oldest tribal communities in India, traditionally skilled in archery and known for colorful folk traditions."
+  },
+  {
+    name: "Santhal",
+    state: "Jharkhand",
+    description:
+      "A major tribal community recognized for their vibrant music, dance, festivals, and traditional farming practices."
+  },
+  {
+    name: "Munda",
+    state: "Jharkhand",
+    description:
+      "An indigenous tribal community known for their village self-governance system and rich cultural heritage."
+  },
+  {
+    name: "Oraon",
+    state: "Jharkhand",
+    description:
+      "A prominent tribal community known for agriculture, traditional dances, and the Sarhul festival."
+  },
+  {
+    name: "Khasi",
+    state: "Meghalaya",
+    description:
+      "A matrilineal tribal community famous for their unique social customs, traditional music, and living root bridges."
+  },
+  {
+    name: "Garo",
+    state: "Meghalaya",
+    description:
+      "A matrilineal tribe known for the Wangala harvest festival, traditional drum music, and rich folklore."
+  },
+  {
+    name: "Jaintia",
+    state: "Meghalaya",
+    description:
+      "A tribal community known for their matrilineal traditions, festivals, and cultural heritage in eastern Meghalaya."
+  },
+  {
+    name: "Naga",
+    state: "Nagaland",
+    description:
+      "A collective term for several indigenous tribes celebrated for colorful festivals, warrior traditions, and distinctive handicrafts."
+  },
+  {
+    name: "Ao",
+    state: "Nagaland",
+    description:
+      "One of the major Naga tribes, known for the Moatsu festival and rich oral traditions."
+  },
+  {
+    name: "Angami",
+    state: "Nagaland",
+    description:
+      "A prominent Naga tribe recognized for terraced farming, traditional architecture, and the Sekrenyi festival."
+  },
+  {
+    name: "Konyak",
+    state: "Nagaland",
+    description:
+      "Known for their elaborate facial tattoos, traditional craftsmanship, and the vibrant Aoleang festival."
+  },
+  {
+    name: "Bodo",
+    state: "Assam",
+    description:
+      "An indigenous community known for the Bwisagu festival, handloom weaving, and rich folk music."
+  },
+  {
+    name: "Mishing",
+    state: "Assam",
+    description:
+      "A riverine tribal community famous for the Ali-Aye-Ligang festival and bamboo stilt houses."
+  },
+  {
+    name: "Karbi",
+    state: "Assam",
+    description:
+      "A major hill tribe known for traditional agriculture, colorful attire, and folk dances."
+  },
+  {
+    name: "Dimasa",
+    state: "Assam",
+    description:
+      "An indigenous tribal community with a rich heritage of festivals, weaving, and traditional governance."
+  },
+  {
+    name: "Apatani",
+    state: "Arunachal Pradesh",
+    description:
+      "Known for sustainable wet-rice cultivation, unique cultural practices, and the Dree festival."
+  },
+  {
+    name: "Adi",
+    state: "Arunachal Pradesh",
+    description:
+      "A tribal community celebrated for the Solung festival, bamboo craftsmanship, and oral traditions."
+  },
+  {
+    name: "Nyishi",
+    state: "Arunachal Pradesh",
+    description:
+      "One of the largest tribes in Arunachal Pradesh, known for traditional attire and the Nyokum festival."
+  },
+  {
+    name: "Monpa",
+    state: "Arunachal Pradesh",
+    description:
+      "A Buddhist tribal community famous for monasteries, yak rearing, and Losar celebrations."
+  },
+  {
+    name: "Lepcha",
+    state: "Sikkim",
+    description:
+      "Considered the original inhabitants of Sikkim, known for their deep connection with nature and traditional weaving."
+  },
+  {
+    name: "Bhutia",
+    state: "Sikkim",
+    description:
+      "A Himalayan community known for Buddhist traditions, monasteries, and colorful festivals."
+  },
+  {
+    name: "Toda",
+    state: "Tamil Nadu",
+    description:
+      "A Nilgiri tribal community known for distinctive barrel-shaped houses, embroidery, and buffalo pastoralism."
+  },
+  {
+    name: "Irula",
+    state: "Tamil Nadu",
+    description:
+      "Known for traditional knowledge of forests, medicinal plants, and snake-catching skills."
+  },
+  {
+    name: "Kurumba",
+    state: "Tamil Nadu",
+    description:
+      "A tribal community of the Nilgiris known for honey collection, forest-based livelihoods, and traditional healing."
+  },
+  {
+    name: "Koya",
+    state: "Telangana",
+    description:
+      "A tribal community traditionally engaged in agriculture and known for vibrant folk culture."
+  },
+  {
+    name: "Chenchu",
+    state: "Andhra Pradesh",
+    description:
+      "A forest-dwelling tribal community traditionally dependent on hunting, gathering, and forest resources."
+  },
+  {
+    name: "Sahariya",
+    state: "Rajasthan",
+    description:
+      "A Particularly Vulnerable Tribal Group known for forest-based livelihoods and traditional customs."
+  },
+  {
+    name: "Baiga",
+    state: "Madhya Pradesh",
+    description:
+      "A Particularly Vulnerable Tribal Group known for traditional healing practices and a forest-based lifestyle."
+  },
+  {
+    name: "Jarwa",
+    state: "Andaman and Nicobar",
+    description:
+      "An indigenous tribal community of the Andaman Islands known for their hunter-gatherer lifestyle."
+  },
+  {
+    name: "Onge",
+    state: "Andaman and Nicobar",
+    description:
+      "A Particularly Vulnerable Tribal Group native to Little Andaman Island."
+  },
+  {
+    name: "Sentinelese",
+    state: "Andaman and Nicobar",
+    description:
+      "An indigenous community living in voluntary isolation on North Sentinel Island."
+  },
+  {
+    name: "Nicobarese",
+    state: "Andaman and Nicobar",
+    description:
+      "An indigenous tribal community known for coconut cultivation, fishing, and traditional village life."
+  },
+  {
+    name: "Warli",
+    state: "Maharashtra",
+    description:
+      "A tribal community internationally famous for the distinctive Warli style of tribal painting."
+  },
+  {
+    name: "Katkari",
+    state: "Maharashtra",
+    description:
+      "A Particularly Vulnerable Tribal Group traditionally dependent on forest produce and seasonal labor."
+  },
+  {
+    name: "Dongria Kondh",
+    state: "Odisha",
+    description:
+      "Known for protecting the Niyamgiri Hills, horticulture, and distinctive traditional jewelry."
+  },
+  {
+    name: "Bonda",
+    state: "Odisha",
+    description:
+      "One of India's oldest tribal communities, recognized for their unique attire and hill settlements."
+  },
+  {
+    name: "Ho",
+    state: "Odisha",
+    description:
+      "A tribal community known for agriculture, traditional dances, and vibrant festivals."
+  },
+  {
+    name: "Juang",
+    state: "Odisha",
+    description:
+      "A Particularly Vulnerable Tribal Group with a rich heritage of forest-based traditions."
+  },
+  {
+    name: "Rabha",
+    state: "Assam",
+    description:
+      "An indigenous community known for weaving, folk dances, and traditional festivals."
+  },
+  {
+    name: "Gaddi",
+    state: "Himachal Pradesh",
+    description:
+      "A pastoral tribal community traditionally engaged in sheep and goat herding in the Himalayas."
+  },
+  {
+    name: "Gujjar",
+    state: "Jammu and Kashmir",
+    description:
+      "A nomadic and pastoral tribal community known for livestock rearing in the Himalayan region."
+  },
+  {
+    name: "Bakarwal",
+    state: "Jammu and Kashmir",
+    description:
+      "A nomadic pastoral tribe that migrates seasonally with sheep and goats across the Himalayas."
+  }
+];
+
+
 
